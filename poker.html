@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="poker.css">
+    <title>Texas Hold'em Poker</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Texas Hold'em Poker</h1>
+        
+        <!-- Player Info -->
+        <div class="player-section">
+            <h2>Your Hand</h2>
+            <div id="player-hand" class="hand"></div>
+            <p>Your Coins: <span id="player-coins">1000</span></p>
+        </div>
+        
+        <!-- NPC Info -->
+        <div class="npc-section">
+            <h2>Opponent's Hand</h2>
+            <div id="npc-hand" class="hand"></div>
+            <p>Opponent's Coins: <span id="npc-coins">1000</span></p>
+        </div>
+        
+        <!-- Community Cards (flop, turn, river) -->
+        <div class="community-section">
+            <h2>Community Cards</h2>
+            <div id="community-cards" class="hand"></div>
+        </div>
+        
+        <!-- Betting and Actions -->
+        <div class="action-section">
+            <button id="deal" class="btn">Deal Cards</button>
+            <button id="bet" class="btn" disabled>Bet 100</button>
+            <button id="fold" class="btn" disabled>Fold</button>
+            <button id="reveal" class="btn" disabled>Reveal Hands</button>
+            <div id="message"></div>
+        </div>
+    </div>
+    
+    <script src="poker.js"></script>
+</body>
+</html>
